@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+
+    <script src="index1.js"></script>
+    <title>Hajji Footwear</title>
+</head>
+<body>
+    <nav>
+        <div class="navTop">
+            <h1>Hajji Footwear</h1>
+
+            <div class="navItem">
+                
+            </div>
+            <div class="navItem">
+                <div class="search">
+                    
+                    <input type="text" placeholder="Search Here" class="searchInput">  
+     </div>
+            </div>
+            <div class="navItem" id="limitedOfferItem">
+              <span class="limitedOffer" onclick="showOffers()">Limited Offers Available..</span>
+          </div>
+        </div>
+        <div class="navBottom">
+            <h3 class="menu">Peshawari Chappal</h3>
+            <h3 class="menu"><a href="loafer.html" style="color: aliceblue;">Loafers</a></h3>
+            <h3 class="menu"><a href="shoes.html" style="color: aliceblue;">Shoes</a></h3>
+            <h3 class="menu"><a href="sandel.html" style="color: aliceblue;">Sandels</a></h3>
+            <h3 class="menu"><a href="casual.html" style="color: aliceblue;">Casual</a></h3>
+        </div>
+
+    </nav>
+    <div class="slider">
+
+        <div class="sliderWrap">
+            <div class="sliderItem">
+                <img src="/705a529a-97a1-4b60-bdf2-64bab0d151031635184404737ProvogueMenBlackSolidFormalDebys1.png" alt="" class="sliderimage">
+                <div class="sliderBacg"></div>
+                <h1 class="sliderTitle">Casual <br>New <br> Stock</h1>
+                <h2 class="sliderprice">Rs 2990</h2>
+                <button class="buybutton"><a href="form.html" id="link">Buy Now!</a></button>            </div>
+          
+           
+           
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="feature">
+        <img class="featureicon" src="/free-shipping-icon-logo-delivery-cargo-truck-with-prize-ribbon-in-trendy-line-illustration-vector.png" alt="" class="featureimage">
+        <span class="featureTitle"><h4>Free shipping</h4></span>
+        <span class="featureDetails"><h4>Free shipping across the country</h4></span>
+    </div>
+    <div class="feature">
+    <img class="featureicon" src="/return-policy-example (1).png" alt="" class="featureimage">
+    <span class="featureTitle"><h4>30 days exchange policy</h4></span>
+    <span class="featureDetails"><h4>Money back return in 14 days</h4></span>
+</div>
+<div class="feature">
+<img class="featureicon" src="/download (2).png" alt="" class="featureimage">
+<span class="featureTitle" ><h4>CONTACH US</h4></span>
+<span class="featureDetails"><h4>Connect with us via email</h4></span>
+</div></div>
+<div class="product">
+    <img class="prodimage" src="/705a529a-97a1-4b60-bdf2-64bab0d151031635184404737ProvogueMenBlackSolidFormalDebys1.png" alt="">
+    <div class="proddetails">
+        <h1 class="prodtitle">Formal Shoes</h1>
+        <h2 class="prodprice">Rs 2990</h2>
+    <p class="proddesc"> A pair of black solid round toe formal derbys with regular styling has a lace-up closure
+        Synthetic leather upper
+        Cushioned footbed
+        Textured and patterned rubber outsole
+        Warranty: 3 Months.</p>
+
+        <h3 style="color: black;">
+          Select your desired colour please</h3>
+          <br>
+        <div class="colours">
+          
+          <div class="color" onclick="changeColor(0)"></div>
+          <div class="color" onclick="changeColor(120)"></div>
+          <div class="color" onclick="changeColor(160)"></div>
+      </div>
+      
+       
+         <div class="sizes" id="sizesContainer"></div>
+
+            <script> generateSizeButtons();</script>
+        <button class="prodbutton"><a href="form.html" id="link">Buy Now!</a></button>
+  
+</div>
+    <script src="index1.js"> </script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+      }
+  
+      footer {
+        margin-top: 50px;
+        background-color: black;
+        color: #fff;
+        padding: 20px 0;
+      }
+  
+      .footer-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+  
+      .footer-categories,
+      .footer-about,
+      .footer-contact,
+      .footer-social {
+        flex: 1;
+        margin-right: 50px;
+      }
+  
+      h3 {
+        color: #fff;
+      }
+  
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+  
+      li {
+        margin-bottom: 8px;
+      }
+  
+      a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+      }
+  
+      a:hover {
+        color: #ffcc00;
+      }
+  
+      .footer-bottom {
+        background-color: #222;
+        padding: 10px 0;
+        text-align: center;
+      }
+  
+    </style>
+  </head>
+  <body>
+  
+    <footer>
+      <div class="footer-container">
+        <div class="footer-categories">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="#">Peshawari Chappal</a></li>
+            <li><a href="#">Lpafers</a></li>
+            <li><a href="#">Shoes</a></li>
+            <li><a href="#">Casual</a></li>
+            <li><a href="#">Sandels</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-about">
+          <h3>About Us</h3>
+          <p>Our mission is to be the biggest and the best leader in Pakistan’s footwear industry by offering trendy, elegant and sophisticated shoes with tremendous quality, superior customer services and highly modern techniques</p>
+        </div>
+  
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p>Email: vkmeraj@gmail.com</p>
+          <p>Phone: +92-337-1234567</p>
+        </div>
+  
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="footer-bottom">
+        <p>&copy; 2024 Haji Footwear. All rights reserved.</p>
+      </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,288 @@
+body{
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+nav{
+    background-color: black;
+    color: white;
+    padding: 15px 40px;
+}
+.navTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.search{
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+.searchInput{
+    border: none;
+    background-color: grey;
+}
+.searchInput::placeholder{
+    color: lightgray;
+}
+.limitedOffer{
+
+    font-size: 20px;
+    border: 3px green;
+    cursor: pointer;
+}
+.navBottom{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.menu{
+    margin-right: 50px;
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 400;
+}
+.slider{
+background-image: url("/bg\ black.png");
+background-repeat: no-repeat;
+background-size: cover;
+
+/* background-image: url("https://www.onlygfx.com/wp-content/uploads/2017/01/black-wallpaper-7-1024x768.jpg");    background-image:url("https://images.pexels.com/photos/396547/pexels-photo-396547.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"); */
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0 89%);
+
+}
+.sliderWrap{
+    display: flex;
+    width: 89vw;
+    transition: all 2 ease-in-out;
+}
+.sliderItem{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .sliderBacg{
+width: 700px;
+height: 700px;
+border-radius: 50%;
+position: absolute;
+/* background-color: cyan;} */
+
+.sliderimage{
+    z-index: 1;
+    background-repeat: no-repeat;
+
+}
+
+
+
+.sliderTitle{
+    position: absolute;
+    top :60%;
+    right: 10%;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+    z-index: 1;
+
+}
+.sliderprice{
+    position: absolute;
+    top:60%;
+    left: 10%;
+    color: white;
+    text-align: center;
+    font-weight: 800;
+    font-size: 60px;
+    border: 3px solid white;
+    
+}
+.buybutton{
+    position: absolute;
+    top:100%;
+    right: 8%;
+    background-color: rgba(0, 0, 0, 0.747);
+    color: #ffff;
+    text-align: center;
+    font-weight: 800;
+    font-size: 40px;
+    border: 3px solid white;
+    cursor: pointer;
+}
+.buybutton:hover{
+background-color: white;
+color: black;
+}
+#link{
+    color: honeydew;
+}
+#link:hover{
+    background-color: white;
+    color: black;
+    }
+
+.sliderItem:nth-child(1)  .sliderBacg {
+    background-color: rgb(33, 120, 12);
+}
+.sliderItem:nth-child(2) .sliderBacg {
+    background-color: rgb(130, 43, 92);
+}
+.sliderItem:nth-child(3) .sliderBacg {
+    background-color: rgb(104, 100, 27);
+}
+.sliderItem:nth-child(4) .sliderBacg{
+    background-color: rgb(26, 79, 92);
+}
+.sliderItem:nth-child(1) .sliderprice {
+    color: white;
+}
+.sliderItem:nth-child(2) .sliderprice {
+    color: white;
+}
+.sliderItem:nth-child(3) .sliderprice {
+    color: white;
+}
+.sliderItem:nth-child(4) .sliderprice{
+    color:white;
+}
+
+
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.featureicon{
+    /* display: flex; */
+    width: 150px;
+    height: 150px;
+}
+.featureTitle{
+font-size: 20px;
+font-weight: 650;
+
+}
+.featureDetails{
+    color: gray;
+    width: 50px;
+    height: 100px;
+    /* font-size: 22px; */
+}
+.product{
+    height: 120vh;
+    background-color: gainsboro;
+    position: relative;
+    clip-path: polygon(0 11%, 100% 0, 100% 100%, 0 100%);
+
+
+}
+.prodimage{
+    width: 40%;
+}
+.proddetails{
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    width: 40%;
+    padding: 50px;
+}
+.prodtitle{
+    font-size: 75px;
+    font-weight: 900;
+}
+.proddesc{
+    font-size: 24px;
+    color: grey;
+
+}
+.colours,.sizes{
+display: flex;
+margin-bottom: 10px;
+}
+.color{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: black;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.color:nth-child(1){
+    background-color: orange;
+}
+.color:nth-child(2){
+    background-color: green;
+}
+.color:nth-child(3){
+    background-color: black;
+}
+.size{
+    padding: 5px 20px;
+    border: 1px solid black;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.prodbutton{
+    padding: 10px 20px;
+    float:right;
+    background-color: black;
+    color:white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.prodbutton:hover{
+    background-color: white;
+    color: #000000;
+}
+
+
+
+
+
+
+
+
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust the maximum width as needed */
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .slider-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+   
+   
+  }
+
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Style for the buttons */
+  .btnn {
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+  }
+  
